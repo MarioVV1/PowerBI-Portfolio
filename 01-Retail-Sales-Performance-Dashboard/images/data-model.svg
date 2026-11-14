@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#376d70">Data Model — Retail Sales Performance Dashboard</text>
+  <text x="450" y="56" text-anchor="middle" font-size="12" fill="#5f7b7a">Two fact tables share the Store and Date dimensions (many-to-one, single direction)</text>
+
+  <!-- relationship lines -->
+  <g stroke="#45958F" stroke-width="2" fill="none">
+    <path d="M230 270 L230 175"/>
+    <path d="M670 270 L670 220 L560 175"/>
+    <path d="M230 400 L230 500 L340 500"/>
+    <path d="M670 400 L670 500 L560 500"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#376d70">
+    <text x="238" y="262">*</text><text x="326" y="144">1</text>
+    <text x="678" y="262">*</text><text x="566" y="192">1</text>
+    <text x="238" y="418">*</text><text x="326" y="494">1</text>
+    <text x="678" y="418">*</text><text x="566" y="494">1</text>
+  </g>
+
+  <!-- Stores dimension -->
+  <g>
+    <rect x="340" y="80" width="220" height="110" rx="8" fill="#eef7f6" stroke="#45958F" stroke-width="1.5"/>
+    <rect x="340" y="80" width="220" height="28" rx="8" fill="#45958F"/>
+    <rect x="340" y="98" width="220" height="10" fill="#45958F"/>
+    <text x="450" y="99" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">stores data-set (Dimension)</text>
+    <g font-size="12" fill="#23403f"><text x="356" y="130">Store (PK)</text><text x="356" y="152">Store Type (A / B / C)</text><text x="356" y="174">Store Size</text></g>
+  </g>
+  <path d="M340 150 L230 150 L230 175" stroke="#45958F" stroke-width="2" fill="none"/>
+
+  <!-- Sales fact -->
+  <g>
+    <rect x="110" y="270" width="240" height="130" rx="8" fill="#f5fbfa" stroke="#376d70" stroke-width="1.5"/>
+    <rect x="110" y="270" width="240" height="28" rx="8" fill="#376d70"/>
+    <rect x="110" y="288" width="240" height="10" fill="#376d70"/>
+    <text x="230" y="289" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">sales data-set (Fact)</text>
+    <g font-size="12" fill="#23403f"><text x="126" y="320">Store · Dept · Date</text><text x="126" y="342">Weekly Sales</text><text x="126" y="364">IsHoliday</text><text x="126" y="386" fill="#45958F">Σ 7 DAX measures</text></g>
+  </g>
+
+  <!-- Features fact -->
+  <g>
+    <rect x="550" y="270" width="240" height="130" rx="8" fill="#f5fbfa" stroke="#376d70" stroke-width="1.5"/>
+    <rect x="550" y="270" width="240" height="28" rx="8" fill="#376d70"/>
+    <rect x="550" y="288" width="240" height="10" fill="#376d70"/>
+    <text x="670" y="289" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Features data set (Fact)</text>
+    <g font-size="12" fill="#23403f"><text x="566" y="320">Store · Date · IsHoliday</text><text x="566" y="342">Temperature · Fuel Price</text><text x="566" y="364">CPI · Unemployment</text><text x="566" y="386">MarkDown1 – MarkDown5</text></g>
+  </g>
+
+  <!-- Date dimension -->
+  <g>
+    <rect x="340" y="460" width="220" height="120" rx="8" fill="#eef7f6" stroke="#45958F" stroke-width="1.5"/>
+    <rect x="340" y="460" width="220" height="28" rx="8" fill="#45958F"/>
+    <rect x="340" y="478" width="220" height="10" fill="#45958F"/>
+    <text x="450" y="479" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Date (DAX calendar)</text>
+    <g font-size="12" fill="#23403f"><text x="356" y="510">Date (PK)</text><text x="356" y="532">Year · Quarter · Month</text><text x="356" y="554">Month-Year · Week Number</text><text x="356" y="574" fill="#5f7b7a" font-size="11">CALENDAR(2024-01-01, 2026-12-31)</text></g>
+  </g>
+</svg>

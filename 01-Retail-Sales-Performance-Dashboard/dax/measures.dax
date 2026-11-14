@@ -1,0 +1,50 @@
+// Retail Sales Performance Dashboard - DAX measures and calculated tables
+
+// ---- Calculated table: Date ----
+Date =
+ADDCOLUMNS ( 
+CALENDAR ( DATE(2024,1,1), DATE(2026,12,31) ), 
+"Year", YEAR([Date]), 
+"Month Number", MONTH([Date]), 
+"Month Name", FORMAT([Date], "MMMM"), 
+"Quarter", "Q" & FORMAT([Date], "Q"), 
+"Month-Year", FORMAT([Date], "MMM-yyyy"), 
+"Week Number", WEEKNUM([Date]) 
+)
+
+// Table: sales data-set
+Total Sales =
+SUM('sales data-set'[Weekly Sales])
+
+// Table: sales data-set
+Avg Weekly Sales =
+AVERAGE('sales data-set'[Weekly Sales])
+
+// Table: sales data-set
+Average Sales per Store =
+DIVIDE([Total Sales], DISTINCTCOUNT('sales data-set'[Store]))
+
+// Table: sales data-set
+Sum Weekly Sales =
+SUM('sales data-set'[Weekly Sales])
+
+// Table: sales data-set
+Number of Records =
+COUNTROWS('sales data-set')
+
+// Table: sales data-set
+Sales Last Year =
+VAR LastSaleDate =
+    CALCULATE ( MAX ( 'sales data-set'[Date] ), REMOVEFILTERS () )
+RETURN
+    CALCULATE (
+        [Total Sales],
+        DATEADD (
+            FILTER ( VALUES ( 'Date'[Date] ), 'Date'[Date] <= LastSaleDate ),
+            -1, YEAR
+        )
+    )
+
+// Table: sales data-set
+YoY Growth =
+DIVIDE([Total Sales] - [Sales Last Year], [Sales Last Year])
