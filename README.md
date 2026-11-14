@@ -16,9 +16,9 @@ Welcome to my Power BI portfolio! Each project turns a raw dataset into an inter
 
 ## 👋 About Me
 
-I'm **[Your Name]**, a data analyst who enjoys turning messy data into clear, decision-ready dashboards. I work with Power BI (DAX, Power Query, data modeling), Excel and SQL. I focus on dashboards that are easy to read and built around the questions stakeholders actually ask.
+I'm **Proudmorakod Tranghiranyathorn**, a third year student at Chulalongkorn University who enjoys turning messy data into clear, decision-ready dashboards. I work with Power BI (DAX, Power Query, data modeling), Excel and SQL. I focus on dashboards that are easy to read and built around the questions stakeholders actually ask.
 
-📫 [LinkedIn](https://www.linkedin.com/in/[your-linkedin]) · ✉️ [your.email@example.com](mailto:your.email@example.com)
+ ✉️ proud1372548@gmail.com
 
 ---
 
@@ -27,8 +27,6 @@ I'm **[Your Name]**, a data analyst who enjoys turning messy data into clear, de
 | # | Project | Domain | Highlights |
 |---|---|---|---|
 | 01 | [Retail Sales Performance Dashboard](01-Retail-Sales-Performance-Dashboard/) | Retail | YoY time intelligence · forecasting · seasonality |
-| 02 | *Coming soon* | | |
-| 03 | *Coming soon* | | |
 
 ---
 
@@ -64,16 +62,6 @@ PowerBI-Portfolio/
 
 ---
 
-## 📬 Contact
-
-I'm open to data analyst and BI roles. Feel free to reach out!
-
-- 💼 LinkedIn: [linkedin.com/in/[your-linkedin]](https://www.linkedin.com/in/[your-linkedin])
-- ✉️ Email: [your.email@example.com](mailto:your.email@example.com)
-- 🌐 NovyPro / portfolio site: [add link]
-
 ## 📄 License
 
 The dashboards and code in this repository are my own work and are free to view for learning purposes. Each dataset belongs to its original source, linked in the project's README.
-
-⭐ If you find this portfolio useful, consider giving it a star!
