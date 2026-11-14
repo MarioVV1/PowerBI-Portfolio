@@ -87,12 +87,15 @@ All measures: [`dax/measures.dax`](dax/measures.dax)
 
 ## 💡 Key Insights
 
-> ✏️ *Replace these with the numbers from your own dashboard. Recruiters read this section first.*
+- **Type A stores drive nearly two-thirds of revenue.** The 22 Type A stores (49% of the chain) generate **64.3%** of total sales ($4.33B of $6.74B). An average Type A store sells $196.9M, compared with $117.7M for Type B and $67.6M for Type C.
+- **The top 10 stores account for 39.1% of total sales**, and 9 of them are Type A. Store 20 leads with $301.4M, which is 8.1× the lowest-selling store (Store 33, $37.2M).
+- **Store size is the strongest driver of sales.** Store size and total sales have a correlation of 0.85, so bigger stores consistently sell more.
+- **The week before Christmas is the biggest spike of the year, not the officially flagged holiday weeks.** The pre-Christmas week reached $81M in 2010 and $77M in 2011, about 1.7× an average week ($47M). All of the top 8 sales weeks fall between Thanksgiving and Christmas. Officially flagged holiday weeks average only 7.8% above normal weeks, because the Christmas flag falls on the quieter week after Christmas.
+- **January is the weakest month**, averaging $41.6M per week. That is 28% below December ($57.7M), which points to a clear post-holiday slump.
+- **YoY growth for the latest year is +5.0%.** Sales for Jan to late Oct reached $2.00B, compared with $1.90B for the same period the year before. The latest year's data ends in October, so the DAX compares the same months in both years.
+- **Sales are concentrated in a few departments.** The top 5 departments (92, 95, 38, 72, 90) make up 28.5% of all sales.
 
-- **Store type A** contributes the largest share of total sales — `__%` of revenue.
-- **Holiday weeks** (late November–December) show the strongest spikes in the seasonality chart.
-- **Top 10 stores** account for `__%` of total sales.
-- **YoY growth** for the latest year is `__%`.
+**Recommendation:** Plan stock and staff around the 5 weeks from Thanksgiving to Christmas, and look at why the smaller Type A stores (e.g. Stores 33 and 36) underperform.
 
 ## 🛠️ Skills Demonstrated
 
